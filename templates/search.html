@@ -1,0 +1,21 @@
+{% extends "main_template.html" %}
+{% block page_view %}
+<!-- This is the base template for the catalogue page -->
+    <main>
+        <div class="display-panel-bg">
+            <h3>Find Search</h3>
+            <form id="search-form" onsubmit="search_entries(event, this, 'search')">
+                <div>
+                    <input id="search-tags-input" type="text" placeholder="Tags.." name="tags">
+                </div>
+
+                <input type="submit" value="Search">
+            </form>
+
+            <div>
+                <ul id="showResults">
+                </ul>
+            </div>
+        </div>
+    </main>
+{% endblock page_view %}

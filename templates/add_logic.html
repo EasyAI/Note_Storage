@@ -1,0 +1,21 @@
+{% extends "main_template.html" %}
+{% block page_view %}
+<!-- This is the base template for the catalogue page -->
+    <main>
+      <div class="display-panel-bg">
+        <section class="center-element">
+          <form id="add-form" method="post" onsubmit="create_entries(event, this)">
+            <h2>Add Search</h2>
+            <p>Title: <input type="text" name="title"></p>
+            <p>Tag: <input type="text" name="tags"></p>
+            <p>Logic: <input type="text" name="logic"></p>
+            <p>Description: <input type="text" name="description"></p>
+            <p>Author: <input type="text" name="author"></p>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+            <p id="action-result">
+          </form>
+        </section>
+      </div>
+    </main>
+{% endblock page_view %}

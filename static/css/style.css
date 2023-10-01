@@ -1,0 +1,144 @@
+
+/* Body formatting */
+body {
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+/* Header formatting */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  width: 300px;
+  padding: 0.5em;
+  font-size: 16px;
+  margin-right: 1em;
+  border-radius: 4px;
+  border: none;
+}
+
+.search-bar button[type="submit"] {
+  padding: 0.5em 1em;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Main Section formatting */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.center-element {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #add8e6;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 50%;
+  margin: 1rem;
+}
+
+.center-element h2 {
+  color: #434f52;
+}
+
+.center-element p {
+  color: #434f52;
+}
+
+.center-element input {
+  color: #434f52;
+}
+
+.center-element p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+header form {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+}
+
+header form input, header form select, header form textarea, header form button {
+margin: 10px 0;
+padding: 10px;
+width: 100%;
+box-sizing: border-box;
+}
+
+input[type="text"]#spl {
+  height: 6rem;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+button {
+  background-color: #add8e6;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #80b3ff;
+}
+
+button#remove {
+  background-color: #ff8080;
+}
+
+button#remove:hover {
+  background-color: #ff4d4d;
+}
+
+#elementToHide {
+  display: none;
+}
